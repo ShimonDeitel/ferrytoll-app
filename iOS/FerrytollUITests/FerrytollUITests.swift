@@ -34,7 +34,7 @@ final class FerrytollUITests: XCTestCase {
         let textFields = app.textFields
         if textFields.count > 0 {
             textFields.firstMatch.tap()
-            app.staticTexts.firstMatch.tap()
+            app.navigationBars.firstMatch.tap()
             XCTAssertFalse(app.keyboards.element.exists)
         }
     }
